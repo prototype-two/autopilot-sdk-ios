@@ -20,7 +20,7 @@
 
 import PackageDescription
 
-let version = "1.3.2"
+let version = "1.3.3"
 // Must match gradle.properties `spm.dist.repository` (owner/repo of the public dist repo).
 let binaryReleaseRepo = "prototype-two/autopilot-sdk-ios"
 let baseUrl = "https://github.com/\(binaryReleaseRepo)/releases/download/v\(version)"
@@ -56,21 +56,21 @@ let package = Package(
         .binaryTarget(
             name: "MobileAdapterFirebase",
             url: "\(baseUrl)/MobileAdapterFirebase.xcframework.zip",
-            checksum: "8cdf41a0b7faaee334afd97b1d44cbfad187b03ce1637b16b1a185a436bce019"
+            checksum: "45c784b13b511900917e1b16e28d660cb4fa8f0578711f927f679e99b1acf7bc"
         ),
 
         // ── Amplitude adapter ───────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterAmplitude",
             url: "\(baseUrl)/MobileAdapterAmplitude.xcframework.zip",
-            checksum: "6200e0ade709807c9c20fb03c5b9fa43ccdaf1556b576874ab8c3c3342d99551"
+            checksum: "f019ac25b4f0819325fcf9acfce7318cbde87cc28902aa41a9aa4581cb8c27a6"
         ),
 
         // ── AppsFlyer adapter ───────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterAppsFlyer",
             url: "\(baseUrl)/MobileAdapterAppsFlyer.xcframework.zip",
-            checksum: "bf6ed3ca63aba07a78ad106dba8ef9ca1f25cd69b92ecb23a488df5d1597f52f"
+            checksum: "96bbeb49ba281dc21e868489afe73c6f3697eaec20db8308bee15e07118cfcac"
         ),
     ]
 )
