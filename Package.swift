@@ -20,7 +20,7 @@
 
 import PackageDescription
 
-let version = "1.4.26"
+let version = "1.4.27"
 // Must match gradle.properties `spm.dist.repository` (owner/repo of the public dist repo).
 let binaryReleaseRepo = "prototype-two/autopilot-sdk-ios"
 let baseUrl = "https://github.com/\(binaryReleaseRepo)/releases/download/v\(version)"
@@ -42,35 +42,35 @@ let package = Package(
         .binaryTarget(
             name: "MobileApi",
             url: "\(baseUrl)/MobileApi.xcframework.zip",
-            checksum: "f0e102a6a744d4b2a0ccd74d5198bab4f6a0420c0189a92532a6b78ef4029587"
+            checksum: "0b9ef2a13b62224f1e9478530a604b7a21ffa88c77eff8098e44f3ac69ddc6cc"
         ),
 
         // ── Core (required — analytics engine) ─────────────────────────
         .binaryTarget(
             name: "MobileCore",
             url: "\(baseUrl)/MobileCore.xcframework.zip",
-            checksum: "4611db32e505138748975d58852814f70a7a1bc23574bab6eccc3f0cc2e87536"
+            checksum: "f6601e972231e2bd16620b20f0707a337634d737aed7f317385d0178dcae873c"
         ),
 
         // ── Firebase adapter ────────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterFirebase",
             url: "\(baseUrl)/MobileAdapterFirebase.xcframework.zip",
-            checksum: "454391500b66c29374702cc657f2c5ecfb83c974ae25c046198d1f2c569e81c0"
+            checksum: "f3665ff63297adee29838a8967a7a14e330577c7e93214bf3db73ff9dea13f58"
         ),
 
         // ── Amplitude adapter ───────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterAmplitude",
             url: "\(baseUrl)/MobileAdapterAmplitude.xcframework.zip",
-            checksum: "9f92e0cbe811274990963e5fcb208d173332a20f33f4edfd3adf714ae44efcc9"
+            checksum: "0687769403861c97c9ac17a5960704e9c738be0e19613bb18e60de391d27a51c"
         ),
 
         // ── AppsFlyer adapter ───────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterAppsFlyer",
             url: "\(baseUrl)/MobileAdapterAppsFlyer.xcframework.zip",
-            checksum: "f0745efe1da6b4eb5d8d036d60f888d3f947ced253bdc591fdf127c33c9b6768"
+            checksum: "f4626e39e8f767dc9225038d8da4db50e74c7d54854f1e4353b7ceb1f58a27c3"
         ),
     ]
 )
