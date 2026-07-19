@@ -20,7 +20,7 @@
 
 import PackageDescription
 
-let version = "1.4.33"
+let version = "1.4.34"
 // Must match gradle.properties `spm.dist.repository` (owner/repo of the public dist repo).
 let binaryReleaseRepo = "prototype-two/autopilot-sdk-ios"
 let baseUrl = "https://github.com/\(binaryReleaseRepo)/releases/download/v\(version)"
@@ -70,7 +70,7 @@ let package = Package(
         .binaryTarget(
             name: "MobileAdapterAppsFlyer",
             url: "\(baseUrl)/MobileAdapterAppsFlyer.xcframework.zip",
-            checksum: "759fc43c2ac575e362b9444f5ad214c47db91ba2aee323357cff99b39417fdd7"
+            checksum: "35a8152ff3427dee9d71ce98c87760e961fc6e224bec95d23c30661c0228da7d"
         ),
     ]
 )
