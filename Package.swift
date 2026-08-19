@@ -20,7 +20,7 @@
 
 import PackageDescription
 
-let version = "1.7.14"
+let version = "2.0.0"
 // Must match gradle.properties `spm.dist.repository` (owner/repo of the public dist repo).
 let binaryReleaseRepo = "prototype-two/autopilot-sdk-ios"
 let baseUrl = "https://github.com/\(binaryReleaseRepo)/releases/download/v\(version)"
@@ -42,7 +42,7 @@ let package = Package(
         .binaryTarget(
             name: "MobileApi",
             url: "\(baseUrl)/MobileApi.xcframework.zip",
-            checksum: "86e294461bddfaf130704896146778bccf078cc588b4e340a0a81ae0c4316f0b"
+            checksum: "d0548b8404818fab2780b126bb45295656f63d34f4492e0deafbd10d382f1afd"
         ),
 
         // ── Core (required — analytics engine) ─────────────────────────
