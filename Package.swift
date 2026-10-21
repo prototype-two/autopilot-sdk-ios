@@ -21,7 +21,7 @@
 
 import PackageDescription
 
-let version = "2.10.0"
+let version = "2.11.0"
 // Must match gradle.properties `spm.dist.repository` (owner/repo of the public dist repo).
 let binaryReleaseRepo = "prototype-two/autopilot-sdk-ios"
 let baseUrl = "https://github.com/\(binaryReleaseRepo)/releases/download/v\(version)"
@@ -44,35 +44,35 @@ let package = Package(
         .binaryTarget(
             name: "MobileApi",
             url: "\(baseUrl)/MobileApi.xcframework.zip",
-            checksum: "856c354c244522c5fc9edbb57fd94e30399167156fa726e4869c06033bd5f8e3"
+            checksum: "7c7eb4522dd12f64726b1f7e69efcaff410737921fb941ea0f5b217433696f38"
         ),
 
         // ── Core (required — analytics engine) ─────────────────────────
         .binaryTarget(
             name: "MobileCore",
             url: "\(baseUrl)/MobileCore.xcframework.zip",
-            checksum: "065c3f7f1c335c32eeec37485253fa3a4e13a8b9ed89ac35a1b3a2d904c5a2eb"
+            checksum: "e9eba55b717e5b77938174abf770f6f32a4ce5531f691611a7a992bff82d762a"
         ),
 
         // ── Firebase adapter ────────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterFirebase",
             url: "\(baseUrl)/MobileAdapterFirebase.xcframework.zip",
-            checksum: "a6d9e13f940561204b869ca6e7125459645bc12e2cc99a2b4b221603211dbdc5"
+            checksum: "a706dbd8c94170ec7cf83834ce27dea23988924f24f0bd3e23b6e15c0abcf9e7"
         ),
 
         // ── Amplitude adapter ───────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterAmplitude",
             url: "\(baseUrl)/MobileAdapterAmplitude.xcframework.zip",
-            checksum: "21744137e200efba42ec06a93fa1746c159cfc9454e1bf321c2af5ad7af40301"
+            checksum: "18115b7bd514a52f242d9620ec02b4002efa493e0f361ffec6b9b8c2c249aefe"
         ),
 
         // ── AppsFlyer adapter ───────────────────────────────────────────
         .binaryTarget(
             name: "MobileAdapterAppsFlyer",
             url: "\(baseUrl)/MobileAdapterAppsFlyer.xcframework.zip",
-            checksum: "30540c9f5961e258e865507ea4634c76e49e0d329ef299d24d3b449466015407"
+            checksum: "107ec27c51a9333035ced37ea78ca1de60c1ab054c5d3c0195389a3a9c262561"
         ),
 
         // ── Braze adapter ───────────────────────────────────────────────
@@ -81,7 +81,7 @@ let package = Package(
         .binaryTarget(
             name: "MobileAdapterBraze",
             url: "\(baseUrl)/MobileAdapterBraze.xcframework.zip",
-            checksum: "a3ed0b438d90852927c530785618783bbf970983052e43f367e32659a90b3964"
+            checksum: "345151a0d1951551edef58e8bca77338e488a0ede49949c3bb5d075d0e1e3f66"
         ),
     ]
 )
